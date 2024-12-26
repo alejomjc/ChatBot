@@ -1,0 +1,8 @@
+{
+    "include": ["src/**/*.py"],
+    "exclude": ["**/node_modules/**", "**/tests/**"],
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": true,
+    "reportOptionalSubscript": "none"
+  }
+  
