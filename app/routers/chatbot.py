@@ -26,7 +26,6 @@ def ask(input_data: AskInput, session: Session = Depends(get_session)):
         raise HTTPException(status_code=404, detail="User not found")
 
     response = ask_openai(input_data.username, input_data.question, user.role, session)
-    create_message(session, input_data.username, input_data.question, response)
     return {"response": response}
 
 
